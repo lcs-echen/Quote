@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		CA3C6BD829E9D9E3003567B4 /* QuoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C6BD729E9D9E3003567B4 /* QuoteApp.swift */; };
-		CA3C6BDA29E9D9E3003567B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C6BD929E9D9E3003567B4 /* ContentView.swift */; };
 		CA3C6BDC29E9D9E5003567B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA3C6BDB29E9D9E5003567B4 /* Assets.xcassets */; };
 		CA3C6BDF29E9D9E5003567B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA3C6BDE29E9D9E5003567B4 /* Preview Assets.xcassets */; };
+		CA3C6BE829E9DA0C003567B4 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C6BE729E9DA0C003567B4 /* QuoteView.swift */; };
+		CA3C6BED29E9DAD6003567B4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C6BEC29E9DAD6003567B4 /* NetworkService.swift */; };
+		CA3C6BEF29E9DB5B003567B4 /* QuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C6BEE29E9DB5B003567B4 /* QuoteModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA3C6BD429E9D9E3003567B4 /* Quote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA3C6BD729E9D9E3003567B4 /* QuoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteApp.swift; sourceTree = "<group>"; };
-		CA3C6BD929E9D9E3003567B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CA3C6BDB29E9D9E5003567B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA3C6BDE29E9D9E5003567B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CA3C6BE729E9DA0C003567B4 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		CA3C6BEC29E9DAD6003567B4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		CA3C6BEE29E9DB5B003567B4 /* QuoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				CA3C6BD729E9D9E3003567B4 /* QuoteApp.swift */,
-				CA3C6BD929E9D9E3003567B4 /* ContentView.swift */,
+				CA3C6BEB29E9DABD003567B4 /* Services */,
+				CA3C6BE629E9D9FA003567B4 /* View */,
+				CA3C6BE529E9D9F4003567B4 /* Model */,
 				CA3C6BDB29E9D9E5003567B4 /* Assets.xcassets */,
 				CA3C6BDD29E9D9E5003567B4 /* Preview Content */,
 			);
@@ -65,6 +71,30 @@
 				CA3C6BDE29E9D9E5003567B4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CA3C6BE529E9D9F4003567B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA3C6BEE29E9DB5B003567B4 /* QuoteModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA3C6BE629E9D9FA003567B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA3C6BE729E9DA0C003567B4 /* QuoteView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA3C6BEB29E9DABD003567B4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CA3C6BEC29E9DAD6003567B4 /* NetworkService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA3C6BDA29E9D9E3003567B4 /* ContentView.swift in Sources */,
+				CA3C6BED29E9DAD6003567B4 /* NetworkService.swift in Sources */,
 				CA3C6BD829E9D9E3003567B4 /* QuoteApp.swift in Sources */,
+				CA3C6BEF29E9DB5B003567B4 /* QuoteModel.swift in Sources */,
+				CA3C6BE829E9DA0C003567B4 /* QuoteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
